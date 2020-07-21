@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "AjoutCategorie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AjoutCategorie</h2>
+
+<div>
+    <form id="formCategorie" name="formCategorie" action="" method="post">
+        <div class="form-group">
+            <label>CATEGORIE</label>
+            <input type="text" id="LIBELLE_CATEGORIE" class="form-control" name="LIBELLE_CATEGORIE" required />
+        </div>
+        <div>
+            <input type="submit" id="enregistrer" value=" enregistrer" class="btn btn-primary" />
+        </div>
+    </form>
+    <hr />
+    <div class="table-responsive">
+        @*adaptable sur tte les plateforms*@
+    <table class="table table-bordered">
+
+        <tr>
+            <th>CATEGORIE </th>
+            <th>DATE SAISIE </th>
+        </tr>
+        <tr>
+            <td>CATEGORIE 2</td>
+            <td>DATE SAISIE 2</td>
+        </tr>
+        <tr>
+            <td>CATEGORIE 1</td>
+            <td>DATE SAISIE 1</td>
+        </tr>
+    </table>
+</div>
+</div>
