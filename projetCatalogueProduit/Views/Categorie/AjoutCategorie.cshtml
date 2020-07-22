@@ -1,4 +1,6 @@
-﻿
+﻿@model projetCatalogueProduit.Models.CAT_CATEGORIE 
+    @*cat_categorie qui est le nom de la classe et le nom de la table categorie et donc a chaq
+        utilisation du formulaire ci-dessous(btn enregistrer, un objet categorie sera créé et transferer par le controleur*@
 @{
     ViewBag.Title = "AjoutCategorie";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -25,14 +27,14 @@
             <th>CATEGORIE </th>
             <th>DATE SAISIE </th>
         </tr>
+        @*parcours des categories et recuperation du libelle et dateSaisie*@
+        @foreach(var data in ViewBag.listeCategorie)
+        {
         <tr>
-            <td>CATEGORIE 2</td>
-            <td>DATE SAISIE 2</td>
+            <td>@data.LIBELLE_CATEGORIE</td>
+            <td>@data.DATE_SAISIE</td>
         </tr>
-        <tr>
-            <td>CATEGORIE 1</td>
-            <td>DATE SAISIE 1</td>
-        </tr>
+        }
     </table>
 </div>
 </div>
